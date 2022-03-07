@@ -1,3 +1,122 @@
-.blue{
-    background-color: rgb(55, 55, 233);
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+li{
+    list-style: none;
+    padding: 40px;
+}
+
+body{
+    background-color: #E9DAC1;
+}
+
+.header__header{
+    display: flex;
+    background-color: #54BAB9;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul__menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__footer{
+    display: flex;
+    background-color: #F7ECDE;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul__footer{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.div__grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+}
+
+.div__grid div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.div__grid img, .grid__container img{
+    width: 75%;
+    margin: 10px;   
+}
+
+.div__grid img:hover{
+    transform: scale(1.2);
+}
+/*Nosotros*/
+.section__p{
+    font-size: larger;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section__p, img{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+}
+
+/*Galeria*/
+
+.grid__container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+}
+
+.grid__container div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;   
+}
+
+.grid__container img:hover{
+    transform: scale(1.2);
+
+/*Media*/
+
+@media screen and (max-width:500px) {
+
+    body{
+        background-color: #F1E0AC;
+    }
+
+    .header__header{
+        background-color: #495371;
+    }
+    
+    .div__grid{
+        flex-wrap: wrap;
+}
+
+    .footer__footer{
+        background-color: beige;
+    }
 }
