@@ -99,7 +99,7 @@ body{
 
 .grid__container img:hover{
     transform: scale(1.2);
-
+}
 /*Media*/
 
 @media screen and (max-width:500px) {
